@@ -55,3 +55,13 @@ bower_components
 # Utilities
 composer.phar
 phpunit.phar
+
+# Cache
+/cache/
+
+# Sensitive
+/config/config.yaml
+
+# Compiled code
+/web/js/
+/web/css/

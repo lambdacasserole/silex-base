@@ -10,6 +10,8 @@
         }
     ],
     "require": {
-        "silex/silex": "~2.0"
+        "silex/silex": "~2.0",
+        "twig/twig": "^1.24",
+        "mustangostang/spyc": "^0.5.1"
     }
 }
