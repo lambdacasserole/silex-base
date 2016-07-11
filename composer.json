@@ -1,0 +1,15 @@
+{
+    "name": "lambdacasserole/silex-base",
+    "description": "Basic Silex project for a simple website.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Saul Johnson",
+            "email": "saul.a.johnson@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "~2.0"
+    }
+}
