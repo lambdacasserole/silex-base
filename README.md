@@ -51,8 +51,6 @@ gulp
 
 This command will need running again every time you make a change to a Less or CoffeeScript file. If you're working on them, run `gulp watch` in a terminal to watch for file changes and compile accordingly.
 
-Then start your web server and navigate to `http://localhost/` to see the site up and running!
-
 ## Limitations
 
 I'm not a web designer. The site isn't going to bring a tear to your eye with its beauty.
