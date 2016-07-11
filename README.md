@@ -25,7 +25,7 @@ Before anything else, note that this project uses the [Composer](https://getcomp
 composer install
 ```
 
-Or alternatively, if you're using the PHAR (make sure the `php.exe` executable is in your PATH:
+Or alternatively, if you're using the PHAR (make sure the `php.exe` executable is in your PATH):
 
 ```
 php composer.phar install
