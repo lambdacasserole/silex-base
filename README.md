@@ -19,7 +19,19 @@ A couple of files need changing to get the site working for you.
 ## Building
 Clone the project down and open the folder in your favourite editor. It's a JetBrains PhpStorm project but you can use whichever paid/free software takes your fancy.
 
-First, install the npm packages necessary to build and run the website. Run the following in your terminal in the project root directory:
+Before anything else, note that this project uses the [Composer](https://getcomposer.org/) package manager. Install composer (see their website) and run:
+
+```
+composer install
+```
+
+Or alternatively, if you're using the PHAR (make sure the `php.exe` executable is in your PATH:
+
+```
+php composer.phar install
+```
+
+Then, install the npm packages necessary to build and run the website. Run the following in your terminal in the project root directory:
 
 ```
 npm install
