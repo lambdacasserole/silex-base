@@ -12,7 +12,7 @@ var coffee = require('gulp-coffee');
 
 // Compile all the Less.
 gulp.task('less', function () {
-    gulp.src(['./web/less/*.less'])
+    gulp.src(['./src/less/*.less'])
         .pipe(less())
         .pipe(prefix(
             "last 1 version", "> 1%", "ie 8", "ie 7"
@@ -23,18 +23,18 @@ gulp.task('less', function () {
 
 // Compile all the CoffeeScript.
 gulp.task('coffee', function () {
-    gulp.src(['./web/coffee/*.coffee'])
+    gulp.src(['./src/coffee/*.coffee'])
         .pipe(coffee())
         .pipe(gulp.dest('./web/js'));
 });
 
 gulp.task('watch', function() {
     // Compile Less.
-    gulp.watch("./web/less/*.less", function(event) {
+    gulp.watch("./src/less/*.less", function(event) {
         gulp.run('less');
     });
     // Compile CoffeeScript.
-    gulp.watch("./web/coffee/*.coffee", function(event) {
+    gulp.watch("./src/coffee/*.coffee", function(event) {
         gulp.run('coffee');
     });
 });
