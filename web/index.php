@@ -47,7 +47,13 @@ $app->post('/contact', function () use ($twig, $config) {
 
     // Send message if no errors.
     if (sizeof($errors) == 0) {
-        mail($config['contact_form_target'], 'Website contact', "Name: $name\r\nEmail: $email\r\nMessage: $message");
+        
+        // Prepare headers.
+        $headers =  'MIME-Version: 1.0' . "\r\n"; 
+        $headers .= 'From: ' . $config['contact_form_from_name'] . ' <' . $config['contact_form_from'] . '>' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n"; 
+
+        mail($config['contact_form_target'], 'Website contact', "Name: $name\r\nWebsite: $website\r\nEmail: $email\r\nMessage: $message", $headers);
     }
 
     // Render contact page with success/error message.
